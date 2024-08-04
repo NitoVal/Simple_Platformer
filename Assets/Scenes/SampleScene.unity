@@ -1278,7 +1278,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   detectionRadius: 10
-  target: {fileID: 0}
 --- !u!50 &1254310371
 Rigidbody2D:
   serializedVersion: 4

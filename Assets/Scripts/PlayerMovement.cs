@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float _grCheckRadius = .1f;
     private float _jumpForce = 15f;
     
-    bool isFacingRight = true;
+    bool _isFacingRight = true;
     // private float _dashSpeed = 15f;
     // private float _dashDuration = .2f;
     // private float _dashCooldown = 1f;
@@ -52,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
     {
         _bIsGrounded = Physics2D.OverlapCircle(grCheck.position, _grCheckRadius, grMask);
         
-        if (_xMovement > 0 && !isFacingRight)
+        if (_xMovement > 0 && !_isFacingRight)
             Flip();
-        if (_xMovement < 0 && isFacingRight)
+        if (_xMovement < 0 && _isFacingRight)
             Flip();
     }
 
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
     private void GetMovementInputValue(float obj) { _xMovement = obj; }
     private void Flip()
     {
-        isFacingRight = !isFacingRight;
+        _isFacingRight = !_isFacingRight;
         transform.Rotate(0, 180f, 0);
     }
     private void Jump()
