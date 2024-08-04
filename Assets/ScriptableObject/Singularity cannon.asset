@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd01b8ac8c6b64eaef8d54c9d2638b, type: 3}
+  m_Name: Singularity cannon
+  m_EditorClassIdentifier: 
+  WeaponName: Singularity cannon
+  WeaponDescription: 'Fire a black hole that damages and pulls them '
+  EnergyConsumption: 30
+  Damage: 1
+  ProjectileSpeed: 250
+  Projectile: {fileID: 3415265078145332213, guid: 07951d91875482345b2303a0df4e0bfc, type: 3}
+  Icon: {fileID: 21300000, guid: 3f50d61777ede3a45bc02734ca85944c, type: 3}

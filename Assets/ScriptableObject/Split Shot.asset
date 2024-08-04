@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd01b8ac8c6b64eaef8d54c9d2638b, type: 3}
+  m_Name: Split Shot
+  m_EditorClassIdentifier: 
+  WeaponName: Split shot
+  WeaponDescription: Fire 2 projectiles at once
+  EnergyConsumption: 3
+  Damage: 6
+  ProjectileSpeed: 1000
+  Projectile: {fileID: 1791763836506497423, guid: 956de366d01d73f4dbd658c712393c16, type: 3}
+  Icon: {fileID: 21300000, guid: 7fc2e56eb9e7fd749a8c3542fe0f6b22, type: 3}
