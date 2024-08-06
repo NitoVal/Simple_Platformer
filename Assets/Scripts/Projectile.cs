@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileBase : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     [HideInInspector]
     public Weapon affiliatedWeapon;

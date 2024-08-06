@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileSingularityCannon : ProjectileBase
+public class ProjectileSingularityCannon : Projectile
 {
     public Rigidbody2D rb;
     public float duration;

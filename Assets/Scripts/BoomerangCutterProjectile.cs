@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BoomerangCutterProjectile : ProjectileBase
+public class BoomerangCutterProjectile : Projectile
 {
     public Rigidbody2D rb;
     private Vector2 _initialPosition;

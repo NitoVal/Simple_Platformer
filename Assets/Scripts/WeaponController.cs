@@ -52,13 +52,13 @@ public class WeaponController : MonoBehaviour
         
         GameObject projectile = currentWeapon.Projectile;
         
-        if (projectile.GetComponent<ProjectileBase>())
-            projectile.GetComponent<ProjectileBase>().affiliatedWeapon = currentWeapon;
+        if (projectile.GetComponent<Projectile>())
+            projectile.GetComponent<Projectile>().affiliatedWeapon = currentWeapon;
         
-        else if (projectile.GetComponentInChildren<ProjectileBase>())
+        else if (projectile.GetComponentInChildren<Projectile>())
         {
-            ProjectileBase[] childrenList = projectile.GetComponentsInChildren<ProjectileBase>();
-            foreach (ProjectileBase projectileBase in childrenList)
+            Projectile[] childrenList = projectile.GetComponentsInChildren<Projectile>();
+            foreach (Projectile projectileBase in childrenList)
                 projectileBase.affiliatedWeapon = currentWeapon;
         }
 

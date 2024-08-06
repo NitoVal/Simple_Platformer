@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileLemon : ProjectileBase
+public class ProjectileLemon : Projectile
 {
     public Rigidbody2D rb;
     private void Awake()

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileSpinningRazor : ProjectileBase
+public class ProjectileSpinningRazor : Projectile
 {
     public Transform center;
 

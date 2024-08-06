@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class ProjectileBomb : ProjectileBase
+public class ProjectileBomb : Projectile
 {
     public Rigidbody2D rb;
     public LayerMask enemyMask;

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class WaveBeamProjectile : ProjectileBase
+public class ProjectileWaveBeam : Projectile
 {
     public float speedOnX;
     public float amplitude;
