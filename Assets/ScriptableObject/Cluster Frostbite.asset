@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd01b8ac8c6b64eaef8d54c9d2638b, type: 3}
+  m_Name: Cluster Frostbite
+  m_EditorClassIdentifier: 
+  WeaponName: Cluster frostbite
+  WeaponDescription: Fire a projectile that creates pellets when detonating
+  EnergyConsumption: 5
+  Damage: 7
+  ProjectileSpeed: 1000
+  Projectile: {fileID: 8407822250183318690, guid: 2fdff4cf105d89647a2e155313a044c2, type: 3}
+  Icon: {fileID: 0}

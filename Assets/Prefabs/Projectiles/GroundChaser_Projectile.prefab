@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3691250834430231434}
   - component: {fileID: 2223391880269385316}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3694025812353045798}
   - component: {fileID: 4572459966637922091}
   - component: {fileID: 7427619987163711555}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: GroundChaser_Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1310720
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -230,5 +230,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   affiliatedWeapon: {fileID: 0}
-  sprRenderer: {fileID: 2223391880269385316}
   rb: {fileID: 4572459966637922091}

@@ -148,11 +148,11 @@ MonoBehaviour:
   affiliatedWeapon: {fileID: 0}
   explosionRadius: 1
   detectionRadius: 5
-  chainBombLayer:
+  bombMask:
     serializedVersion: 2
     m_Bits: 1048576
+  listPoints: []
   rb: {fileID: -4803610934653685310}
-  lineRenderer: {fileID: 0}
 --- !u!1 &1957451595718962677
 GameObject:
   m_ObjectHideFlags: 0

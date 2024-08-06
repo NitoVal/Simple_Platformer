@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8933102376992691013}
   - component: {fileID: 1360775197614602608}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 506959047543703828}
   - component: {fileID: 1687383208467781214}
   - component: {fileID: 2059606027176988835}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthJuice 1
   m_TagString: Pickup
   m_Icon: {fileID: 0}

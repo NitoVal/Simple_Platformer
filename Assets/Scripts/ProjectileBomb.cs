@@ -8,7 +8,7 @@ public class ProjectileBomb : Projectile
 {
     public Rigidbody2D rb;
     public LayerMask enemyMask;
-
+    public float radius;
     public Transform sriteTransform;
     private void Awake()
     {
@@ -25,12 +25,17 @@ public class ProjectileBomb : Projectile
         if (!other.gameObject.CompareTag("Player"))
         {
             //create an area of effect and damage enemy
-            Collider2D[] hitList = Physics2D.OverlapCircleAll(gameObject.transform.position, 5f, enemyMask);
+            Collider2D[] hitList = Physics2D.OverlapCircleAll(gameObject.transform.position, radius, enemyMask);
 
             foreach (Collider2D hit in hitList)
                 hit.GetComponent<EnemyBase>().TakeDamage(affiliatedWeapon.Damage);
             
             gameObject.SetActive(false);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }

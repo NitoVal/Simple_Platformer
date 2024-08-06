@@ -10,14 +10,15 @@ using UnityEngine.Serialization;
 /// </summary>
 public class ProjectileChainBlast : Projectile
 {
-    const int MAX_CONNECTED_BOMBS = 3;
+    const int MaxChainCount = 3;
     public float explosionRadius;
     public float detectionRadius;
     private float _lifetime;
     
     private Vector2 _newCenter;
-    public Rigidbody2D rb;
+    public LayerMask bombMask;
     
+    public Rigidbody2D rb;
     void Awake()
     {
         rb.AddForce(transform.right * affiliatedWeapon.ProjectileSpeed);
@@ -25,15 +26,15 @@ public class ProjectileChainBlast : Projectile
 
     private void Update()
     {
-        throw new NotImplementedException();
+        Collider2D[] nearbyBombs = Physics2D.OverlapCircleAll(transform.position,detectionRadius,bombMask);
+        foreach (Collider2D bomb in nearbyBombs)
+        {
+
+        }
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, explosionRadius);
-        
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+
     }
 }
