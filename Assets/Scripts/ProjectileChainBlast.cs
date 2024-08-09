@@ -27,6 +27,11 @@ public class ProjectileChainBlast : Projectile
         _explosionDamage = affiliatedWeapon.Damage;
     }
 
+    private void OnDisable()
+    {
+        Explode();
+    }
+
     private void Update()
     {
         Collider2D[] nearbyBombs = Physics2D.OverlapCircleAll(transform.position,detectionRadius,bombMask);
@@ -37,7 +42,7 @@ public class ProjectileChainBlast : Projectile
 
         lifetime -= Time.deltaTime;
         if (lifetime <= 0)
-            Explode();
+            gameObject.SetActive(false);
     }
     
     protected override void OnTriggerEnter2D(Collider2D other)
@@ -46,7 +51,7 @@ public class ProjectileChainBlast : Projectile
         if (other.gameObject.CompareTag("Enemy"))
         {
             transform.SetParent(other.gameObject.transform);
-            rb.isKinematic = true;
+            rb.bodyType = RigidbodyType2D.Static;
         }
     }
     
