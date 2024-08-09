@@ -18,5 +18,5 @@ MonoBehaviour:
   EnergyConsumption: 5
   Damage: 8
   ProjectileSpeed: 400
-  Projectile: {fileID: 0}
-  Icon: {fileID: 0}
+  Projectile: {fileID: 41372833338754761, guid: 39cbbe46db38c2749a9458558f076f71, type: 3}
+  Icon: {fileID: 21300000, guid: 05500caa066c34d4480578fe99414578, type: 3}

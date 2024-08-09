@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32cd01b8ac8c6b64eaef8d54c9d2638b, type: 3}
-  m_Name: Ray arrow
+  m_Name: Zap claw
   m_EditorClassIdentifier: 
-  WeaponName: Ray arrow
-  WeaponDescription: Fire a fast piercing arrow
-  EnergyConsumption: 4
-  Damage: 5
-  ProjectileSpeed: 2000
-  Projectile: {fileID: 356780996776865940, guid: ac46843e8cb83a6498b348f6ca284f2a, type: 3}
-  Icon: {fileID: 21300000, guid: 7f1f553713102474f97f0759ebe9ea58, type: 3}
+  WeaponName: Zap claw
+  WeaponDescription: Fire a hook that attaches to enemies dealing damage overtime.
+    Can also be used as a grapple hook
+  EnergyConsumption: 5
+  Damage: 4
+  ProjectileSpeed: 800
+  Projectile: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 163eae91b68abb44a9be7b2171711c59, type: 3}

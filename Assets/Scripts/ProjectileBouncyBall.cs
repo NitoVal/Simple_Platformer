@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+//When the projectile bounces keep the velocity
 public class ProjectileBouncyBall : Projectile
 {
     public float lifeTime;
@@ -43,5 +44,12 @@ public class ProjectileBouncyBall : Projectile
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
+
+        if (other.gameObject.CompareTag("Enemy"))
+            other.gameObject.GetComponent<EnemyBase>().TakeDamage(_addedDamage);
+    }
+
+    protected override void OnTriggerEnter2D(Collider2D other)
+    {
     }
 }

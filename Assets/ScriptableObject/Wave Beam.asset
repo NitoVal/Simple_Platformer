@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave Beam
   m_EditorClassIdentifier: 
   WeaponName: Wave Beam
-  WeaponDescription: 
+  WeaponDescription: Fire a bullet what goes in a wave trajectory
   EnergyConsumption: 2
   Damage: 5
   ProjectileSpeed: 1000

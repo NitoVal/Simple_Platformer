@@ -145,13 +145,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aebb65d64323348459046f11b33aea01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  affiliatedWeapon: {fileID: 0}
+  affiliatedWeapon: {fileID: 11400000, guid: d88ce22d532ea7f47bb3003879ddd630, type: 2}
   explosionRadius: 1
   detectionRadius: 5
+  lifetime: 5
   bombMask:
     serializedVersion: 2
     m_Bits: 1048576
-  listPoints: []
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 64
   rb: {fileID: -4803610934653685310}
 --- !u!1 &1957451595718962677
 GameObject:

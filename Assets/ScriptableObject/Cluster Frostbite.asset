@@ -18,4 +18,4 @@ MonoBehaviour:
   Damage: 7
   ProjectileSpeed: 1000
   Projectile: {fileID: 8407822250183318690, guid: 2fdff4cf105d89647a2e155313a044c2, type: 3}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: e0b87fc42a0b17b418610a538b1d408b, type: 3}
