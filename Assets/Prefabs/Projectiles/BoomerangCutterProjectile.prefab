@@ -194,6 +194,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   affiliatedWeapon: {fileID: 11400000, guid: 7feb25ceba84c8845a78c20f9db8de83, type: 2}
-  sprRenderer: {fileID: 4502511591873307909}
   rb: {fileID: 3402173593889903692}
   timer: 0.25
+  lifeTime: 1

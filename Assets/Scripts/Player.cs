@@ -65,7 +65,6 @@ public class Player : MonoBehaviour
         
         hpBar.SetHealth(CurrentHp);
     }
-
     public void RecoverEnergy(float amount)
     {
         CurrentEnergy += amount;
@@ -74,7 +73,6 @@ public class Player : MonoBehaviour
         
         energyBar.SetEnergy(CurrentEnergy);
     }
-
     public void IncreaseHp()
     {
         MaxHP += 10f;

@@ -4,23 +4,25 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BoomerangCutterProjectile : Projectile
+public class ProjectileBoomerangCutter : Projectile
 {
     public Rigidbody2D rb;
-    private Vector2 _initialPosition;
 
     public float timer;
+    public float lifeTime;
     private void Awake()
     {
-        _initialPosition = transform.position;
         rb.AddForce(transform.right * affiliatedWeapon.ProjectileSpeed);    
     }
-
     private void Update()
     {
         timer -= Time.deltaTime;
         if (timer < 0)
         {
+            lifeTime -= Time.deltaTime;
+            if (lifeTime <= 0)
+                gameObject.SetActive(false);
+            
             rb.AddForce(-transform.right * (3f * (affiliatedWeapon.ProjectileSpeed * Time.deltaTime)));
         }
     }

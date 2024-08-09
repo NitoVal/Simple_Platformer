@@ -16,6 +16,6 @@ MonoBehaviour:
   WeaponDescription: Fire a fast piercing arrow
   EnergyConsumption: 4
   Damage: 5
-  ProjectileSpeed: 1500
+  ProjectileSpeed: 1750
   Projectile: {fileID: 356780996776865940, guid: ac46843e8cb83a6498b348f6ca284f2a, type: 3}
   Icon: {fileID: 0}
